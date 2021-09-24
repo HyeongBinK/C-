@@ -1,0 +1,64 @@
+#include<iostream>
+#include<string>
+#include<conio.h>
+using namespace std;
+
+class AddNum
+{
+private:
+	int m_iNum1;
+	int m_iNum2;
+public:
+
+	AddNum()
+	{
+		m_iNum1 = 1;
+		m_iNum2 = 10;
+		cout << "Q1() : ";
+		print();
+	}
+
+	AddNum(int iNum)
+	{
+		m_iNum1 = 1;
+		m_iNum2 = iNum;
+		cout << "Q2(100) : ";
+		print();
+	}
+
+	AddNum(int iNum1, int iNum2)
+	{
+		if (iNum1 < iNum2)
+		{
+			m_iNum1 = iNum1;
+			m_iNum2 = iNum2;
+		}
+		else
+		{
+			m_iNum1 = iNum2;
+			m_iNum2 = iNum1;
+		}
+                cout << "Q3(5, 10) : ";
+		print();
+	}
+	
+	int Sum()
+	{
+		int Sum=0;
+		for (int i = m_iNum1; i <= m_iNum2; i++)
+			Sum += i;
+		return Sum;
+	}
+
+	void print()
+	{
+		cout <<Sum() << endl;
+	}
+
+};
+
+void main()
+{
+	AddNum Q1, Q2(100), Q3(5, 10);
+	getch();
+}

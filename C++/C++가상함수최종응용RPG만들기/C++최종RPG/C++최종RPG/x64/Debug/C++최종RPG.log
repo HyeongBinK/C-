@@ -1,0 +1,65 @@
+﻿  Character.cpp
+  DrawManager.cpp
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\DrawManager.h(39,17): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\DrawManager.h(39,20): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\DrawManager.cpp(25,22): warning C4267: '-=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\DrawManager.cpp(42,22): warning C4267: '-=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\DrawManager.cpp(51,22): warning C4267: '-=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\DrawManager.cpp(60,22): warning C4267: '-=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\DrawManager.cpp(70,22): warning C4267: '-=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  GameManager.cpp
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\DrawManager.h(39,17): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\DrawManager.h(39,20): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\MonsterManager.h(40,1): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\GameManager.cpp(101,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\GameManager.cpp(102,8): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\GameManager.cpp(153,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\GameManager.cpp(154,8): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\GameManager.cpp(175,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\GameManager.cpp(176,8): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\GameManager.cpp(201,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\GameManager.cpp(267,89): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\GameManager.cpp(267,56): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\GameManager.cpp(272,7): warning C4996: 'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _kbhit. See online help for details.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\GameManager.cpp(274,9): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\GameManager.cpp(511,6): warning C4101: 'TrueDammage' :참조되지 않은 지역 변수입니다.
+  MainSource.cpp
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\DrawManager.h(39,17): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\DrawManager.h(39,20): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\MonsterManager.h(40,1): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\MainSource.cpp(5,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\MainSource.cpp(6,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Monster.cpp
+  MonsterManager.cpp
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\DrawManager.h(39,17): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\DrawManager.h(39,20): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\MonsterManager.h(40,1): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\MonsterManager.cpp(44,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\MonsterManager.cpp(45,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\MonsterManager.cpp(37,61): warning C4101: 'MagicShield' :참조되지 않은 지역 변수입니다.
+  PlayerManager.cpp
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\DrawManager.h(39,17): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\DrawManager.h(39,20): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\PlayerManager.cpp(64,18): warning C4244: '*=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\PlayerManager.cpp(161,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\PlayerManager.cpp(200,7): warning C4101: 'buf' :참조되지 않은 지역 변수입니다.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\PlayerManager.cpp(202,7): warning C4101: 'cstr' :참조되지 않은 지역 변수입니다.
+  Skill.cpp
+  SkillManager.cpp
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\DrawManager.h(39,17): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\DrawManager.h(39,20): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\SkillManager.cpp(12,7): warning C4101: 'buf' :참조되지 않은 지역 변수입니다.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\SkillManager.cpp(13,7): warning C4101: 'cstr' :참조되지 않은 지역 변수입니다.
+  Sword.cpp
+  TwoHandSword.cpp
+  Weapon.cpp
+  WeaponManager.cpp
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\DrawManager.h(39,17): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\DrawManager.h(39,20): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+  WeaponSkill.cpp
+  코드를 생성하고 있습니다...
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\WeaponManager.cpp(102): warning C4715: 'WeaponManager::FindWeaponEquipLimitLevel': 모든 제어 경로에서 값을 반환하지는 않습니다.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\WeaponManager.cpp(130): warning C4715: 'WeaponManager::WeaponNumberToWeaponName': 모든 제어 경로에서 값을 반환하지는 않습니다.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\WeaponManager.cpp(139): warning C4715: 'WeaponManager::WeaponNumberToWeaponPride': 모든 제어 경로에서 값을 반환하지는 않습니다.
+D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\SkillManager.cpp(168): warning C4715: 'SkillManager::GetSkillAllDataBySkillNumber': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  C++최종RPG.vcxproj -> D:\학원수업\비쥬얼스튜디오 C&C++\문제푼거 업로드\C++\C++가상함수최종응용RPG만들기\C++최종RPG\C++최종RPG\x64\Debug\C++최종RPG.exe

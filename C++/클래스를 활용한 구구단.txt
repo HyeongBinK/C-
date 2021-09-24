@@ -1,0 +1,81 @@
+#include <iostream>
+#include <string>
+#include<Windows.h>
+using namespace std;
+
+#define START 1
+#define END 9
+
+
+
+
+
+class GuGuDan
+{
+private:
+	int Start, End;
+public:
+	void InputStartEnd();
+	void OutputStartEnd();
+
+};
+
+void GuGuDan::InputStartEnd()
+{
+	int _Start, _End;
+
+	while (1)
+	{
+		cout << "시작 단 입력 : ";
+		cin >> _Start;
+		cout << "끝 단 입력 : ";
+		cin >> _End;
+
+		if (_Start > 9 || _Start < 2)
+		{
+			cout << "시작 단이 2보다 작거나 9보다 큽니다" << endl;
+			system("pause");
+		}
+		else if (_End > 9 || _End < 2)
+		{
+			cout << "끝 단이 2보다 작거나 9보다 큽니다" << endl;
+			system("pause");
+		}
+		else if (_End < _Start)
+		{
+			cout << "시작 단이 끝 단보다 큽니다" << endl;
+			system("pause");
+		}
+		else break;
+	}
+
+	Start = _Start;
+	End = _End;
+}
+
+void GuGuDan::OutputStartEnd()
+{
+	for(int i = Start; i <= End; i++)
+	cout << "=====" << i << "단=====\t";
+
+	cout << endl;
+	for (int j = START; j <= END; j++)
+	{
+
+		for (int i = Start; i <= End; i++)
+		{
+			
+			cout << "    " << i << "x" << j << "=" << i*j << "\t";
+
+		}
+		cout << endl;
+	}
+}
+
+void main()
+{
+	GuGuDan G;
+	G.InputStartEnd();
+	G.OutputStartEnd();
+
+}

@@ -1,0 +1,80 @@
+#include <iostream>
+#include <string>
+#include<Windows.h>
+using namespace std;
+
+class MakeRectangle
+{
+private:
+	int Garo, Sero;
+public:
+	void InputGaroSero();
+	void OutputRectangle();
+
+};
+
+void MakeRectangle::InputGaroSero()
+{
+	int _Garo, _Sero;
+	while (1)
+	{
+		cout << "가로 입력 : ";
+		cin >> _Garo;
+		cout << "세로 입력 : ";
+		cin >> _Sero;
+		if (_Garo < 1 || _Sero < 1)
+		{
+			cout << "가로 또는 세로가 1보다 작습니다" << endl;
+			system("pause");
+		}
+		else break;
+	}
+
+
+	Garo = _Garo;
+	Sero = _Sero;
+
+}
+
+void MakeRectangle::OutputRectangle()
+{
+	for (int i = 0; i < Sero; i++)
+	{
+		if (i == 0)
+		cout << "┌";
+		else if (i == Sero - 1)
+		cout << "└";
+		
+		for (int j = 0; j < Garo; j++)
+		{
+			if (i == 0 && j == Garo - 1)
+			{
+				if (Garo > 1)
+					cout << "┐";
+			}
+			else if (i == Sero - 1 && j == Garo - 1)
+			{
+				if (Garo > 1)
+				cout << "┘";
+			}
+				else if (i == 0 || i == Sero - 1)
+				{
+					if(j != Garo-1&& j!= 0)
+					cout << "─";
+				}
+				else if (j == 0 || j == Garo - 1)
+					cout << "│";
+				else cout << "  ";
+			
+		}
+	cout << endl;
+	}
+}
+
+void main()
+{
+	MakeRectangle R;
+	R.InputGaroSero();
+	R.OutputRectangle();
+
+}

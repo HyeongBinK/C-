@@ -1,0 +1,2 @@
+D:\비쥬얼스튜디오 c++\문제푼거 업로드\C++\오목+리플레이+이어하기 기능구현\오목+리플+이어하기 4차\Debug\ConsoleApplication58.exe
+D:\비쥬얼스튜디오 c++\문제푼거 업로드\C++\오목+리플레이+이어하기 기능구현\오목+리플+이어하기 4차\Debug\ConsoleApplication58.pdb

@@ -1,0 +1,357 @@
+#include<iostream>
+#include<string>
+#include<conio.h>
+using namespace std;
+
+#define MEMBERMAX 10
+#define PASS 100
+#define NOPASS 0
+#define LOGIN 0 
+#define LOGOUT 99
+#define CONTINUE 0 
+#define RETURN 98
+
+
+
+struct MemberData
+{
+	string ID;
+	string SecretNumber;
+	string NickName;
+	int Age;
+	string PhoneNumber;
+	int Milage;
+};
+
+void FirstMenu(int MemberNum, int *Select)
+{
+	cout << "=====Login=====" << "<회원수[" << MemberNum << "명]" << endl;
+	cout << "1. 회원가입" << endl;
+	cout << "2. 로그인" << endl;
+	cout << "3. 종료" << endl;
+	cout << "입력 :" << endl;
+	cin >> *Select;
+}
+
+void MakeId(MemberData* MD_L, int MemberNum)
+{
+	while (1)
+	{
+		
+		int PassCode1 = NOPASS, PassCode2 = PASS;
+		
+		while (1)
+		{
+			int CheckCode = PASS; //Id 중복 확인
+			system("cls");
+			cout << "아이디 입력<[3글자↑]AND[오직 영문자만]> :";
+			cin >> (MD_L[MemberNum].ID);
+
+			for (int i = 0; i < MemberNum; i++)
+			{
+				if (MD_L[MemberNum].ID == MD_L[i].ID)
+				{
+					cout << "동일한 아이디가 존재합니다" << endl;
+					CheckCode = NOPASS;
+					system("pause");
+				}
+				
+			}
+
+			if(CheckCode == PASS)
+			break;
+		}
+
+		if ((MD_L[MemberNum].ID).length() >= 3)
+			PassCode1 = PASS;
+		else
+			cout << "ID가 3글자 이하입니다." << endl;
+		
+	
+		for (int i = 0; i < (MD_L[MemberNum].ID).length(); i++)
+		{
+			if ((MD_L[MemberNum].ID)[i] < 65 || (MD_L[MemberNum].ID)[i] > 122)
+				PassCode2 = NOPASS;
+			if ((MD_L[MemberNum].ID)[i] >= 91 && (MD_L[MemberNum].ID)[i] <= 96)
+				PassCode2 = NOPASS;
+		}
+		if (PassCode2 == NOPASS)
+			cout << "영문자만 사용해주세요" << endl;
+
+		if (PassCode1 == PASS && PassCode2 == PASS)
+			return;
+		else 
+			system("pause");
+	}
+}
+
+void MakeSecretNumber(MemberData* MD_L)
+{
+	string checksecret;
+
+	while (1)
+	{
+		system("cls");
+		int PassCode1 = NOPASS, PassCode2 = PASS, PassCode3 = NOPASS;
+
+		cout << "비밀번호입력<[8글자↑]AND[숫자를 포함하여 숫자 또는 영문자만]> :";
+		cin >> (MD_L->SecretNumber);
+		if ((MD_L->SecretNumber).length() >= 8)
+			PassCode1 = PASS;
+		else
+			cout << "SecretNumber가 8글자 이하입니다." << endl;
+
+
+		for (int i = 0; i < (MD_L->SecretNumber).length(); i++)
+		{
+			if ((MD_L->SecretNumber)[i] < 65 || (MD_L->SecretNumber)[i] > 122)
+			{
+				if ((MD_L->SecretNumber)[i] > 57 || (MD_L->SecretNumber)[i] < 48)
+				{
+					PassCode2 = NOPASS;
+				}
+				else 
+					PassCode3 = PASS;
+			}
+
+			if ((MD_L->SecretNumber)[i] >= 91 && (MD_L->SecretNumber)[i] <= 96)
+				PassCode2 = NOPASS;
+		}
+		
+		if (PassCode2 == NOPASS)
+			cout << "영문자와 숫자만을 사용해주세요" << endl;
+	
+		if(PassCode3 == NOPASS)
+			cout << "숫자를 한번이상 입력해주세요" << endl;
+
+		
+
+		if (PassCode1 == PASS && PassCode2 == PASS && PassCode3 == PASS)
+		{
+			cout << "비밀번호 확인: ";
+			cin >> checksecret;
+			if (checksecret == (MD_L->SecretNumber))
+				return;
+			else
+			{
+				cout << "비밀번호가 일치하지 않습니다" << endl;
+				system("pause");
+			}
+		}
+		else
+		system("pause");
+	}
+}
+
+void MakeNickName(MemberData* MD_L)
+{
+	system("cls");
+	cout << "닉네임 입력: ";
+	cin >> (MD_L->NickName);
+}
+
+void AgeInput(MemberData* MD_L)
+{
+	cout << "나이 입력: ";
+	cin >> (MD_L->Age);
+}
+
+void InputPhoneNumber(MemberData* MD_L)
+{
+	cout << "휴대폰번호 입력: ";
+	cin >> (MD_L->PhoneNumber);
+
+}
+
+void PrintSuccess(MemberData* MD_L)
+{
+	cout << "회원가입 성공!! 마일리지 1000원 등록" << endl;
+	(MD_L->Milage) = 1000;
+	system("pause");
+}
+
+void CheckID(MemberData* MD_L, int MemberNum, int* Memo)
+{
+	string IdCheck, SecretNumCheck;
+	while (1)
+	{
+		int PassCode1 = NOPASS, PassCode2 = NOPASS;
+		system("cls");
+		cout << "아이디 입력 : ";
+		cin >> IdCheck;
+		cout << "비밀번호 입력 : ";
+		cin >> SecretNumCheck;
+
+		for (int i = 0; i < MemberNum; i++)
+		{
+			if (IdCheck == MD_L[i].ID)
+			{
+				PassCode1 = PASS;
+				*Memo = i;
+			}
+		
+		}
+
+		if (PassCode1 == PASS)
+		{
+			if (SecretNumCheck == MD_L[*Memo].SecretNumber)
+				PassCode2 = PASS;
+		}
+
+		if (PassCode1 == NOPASS)
+		{
+			cout << "아이디가 존재하지 않습니다" << endl;
+			system("pause");
+		}
+		if (PassCode1 == PASS  && PassCode2 == NOPASS)
+		{
+			cout << "비밀번호가 틀렸습니다." << endl;
+			system("pause");
+		}
+		if (PassCode1 == PASS && PassCode2 == PASS)
+			break;
+	}
+
+}
+
+void LoginMenu()
+{
+	system("cls");
+	cout << "=====Login=====" << endl;
+	cout << "1. 회원정보" << endl;
+	cout << "2. 회원정보 변경" << endl;
+	cout << "3. 로그아웃" << endl;
+	cout << "입력 :" << endl;
+}
+
+void ShowInformation(MemberData MD_L)
+{
+	system("cls");
+	cout << "==========회원 정보==========" << endl;
+	cout << "ID : " << MD_L.ID << endl;
+	cout << "닉네임 : " << MD_L.NickName << endl;
+	cout << "나이 : " << MD_L.Age << endl;
+	cout << "휴대폰 번호 : "<< MD_L.PhoneNumber << endl;
+	cout << "마일리지 : " << MD_L.Milage << endl;
+}
+
+void ReMakeNickName(MemberData* MD_L)
+{
+	string Memo;
+	cout << "현재 닉네임" << MD_L->NickName << endl;
+	Memo = MD_L->NickName;
+	cout << "변경할 닉네임 입력: ";
+	cin >> (MD_L->NickName);
+	cout << Memo << "->" << MD_L->NickName;
+	system("pause");
+}
+
+void ReAgeInput(MemberData* MD_L)
+{
+	int Memo;
+	cout << "현재 나이" << MD_L->Age << endl;
+	Memo = MD_L->Age;
+	cout << "변경할 나이 입력: ";
+	cin >> (MD_L->Age);
+	cout << Memo << "->" << MD_L->Age;
+	system("pause");
+}
+
+void ReInputPhoneNumber(MemberData* MD_L)
+{
+	string Memo;
+	cout << "현재 폰번호" << MD_L->PhoneNumber << endl;
+	Memo = MD_L->PhoneNumber;
+	cout << "변경할 폰번호 입력: ";
+	cin >> (MD_L->PhoneNumber);
+	cout << Memo << "->" << MD_L->PhoneNumber;
+	system("pause");
+}
+
+void DataChangeMenu()
+{
+	cout << "===============================" << endl;
+	cout << "1.닉네임 변경" << endl;
+	cout << "2.나이 변경" << endl;
+	cout << "3.휴대폰번호 변경" << endl;
+	cout << "4.돌아가기" << endl;
+	cout << "입력 : ";
+}
+
+void main()
+{
+	MemberData MemberData_List[MEMBERMAX];
+	int MemberNum = 0; // 현재 저장된 멤버수 표시
+	int Select = 0, Select2 = 0, Select3 = 0;
+	int Memo; //로그인시 로그인된 회원 번호 기억
+	int LogOutCode, ReturnCode;
+
+	while (1)
+	{
+		system("cls");
+		Memo = 0;
+		FirstMenu(MemberNum, &Select);
+		switch (Select)
+		{
+		case 1:
+			MakeId(MemberData_List, MemberNum);
+			MakeSecretNumber(&MemberData_List[MemberNum]);
+			MakeNickName(&MemberData_List[MemberNum]);
+			AgeInput(&MemberData_List[MemberNum]);
+			InputPhoneNumber(&MemberData_List[MemberNum]);
+
+			PrintSuccess(&MemberData_List[MemberNum]);
+			MemberNum++;
+			break;
+		case 2:
+			CheckID(MemberData_List, MemberNum, &Memo);
+			LogOutCode = LOGIN;
+			while (1)
+			{
+				LoginMenu();
+				cin >> Select2;
+				switch (Select2)
+				{
+				case 1:
+					ShowInformation(MemberData_List[Memo]);
+					system("pause");
+					break;
+				case 2:
+					ReturnCode = CONTINUE;
+					while (1)
+					{
+						ShowInformation(MemberData_List[Memo]);
+						DataChangeMenu();
+						cin >> Select3;
+						switch (Select3)
+						{
+						case 1:
+							ReMakeNickName(&MemberData_List[Memo]);
+							break;
+						case 2:
+							ReAgeInput(&MemberData_List[Memo]);
+							break;
+						case 3:
+							ReInputPhoneNumber(&MemberData_List[Memo]);
+							break;
+						case 4:
+							ReturnCode = RETURN;
+							break;
+						}
+						if (ReturnCode == RETURN)
+							break;
+					}
+					break;
+				case 3:
+					LogOutCode = LOGOUT;
+					break;
+				}
+				if (LogOutCode == LOGOUT)
+					break;
+			}
+			break;
+		case 3:
+			return;
+		}
+	}
+}
